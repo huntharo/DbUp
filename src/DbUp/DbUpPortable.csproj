@@ -21,22 +21,20 @@
     <DebugType>full</DebugType>
     <Optimize>false</Optimize>
     <OutputPath>bin\Debug\</OutputPath>
-    <DefineConstants>TRACE;DEBUG;NETPCL</DefineConstants>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
     <DocumentationFile>bin\Debug\DbUpPortable.XML</DocumentationFile>
-    <NoWarn>
-    </NoWarn>
+    <NoWarn>NETPCL</NoWarn>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
     <DebugType>pdbonly</DebugType>
     <Optimize>true</Optimize>
     <OutputPath>bin\Release\</OutputPath>
-    <DefineConstants>TRACE;NETPCL</DefineConstants>
+    <DefineConstants>TRACE</DefineConstants>
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
-    <NoWarn>
-    </NoWarn>
+    <NoWarn>NETPCL</NoWarn>
   </PropertyGroup>
   <PropertyGroup>
     <SignAssembly>true</SignAssembly>
@@ -85,7 +83,6 @@
     <Compile Include="Helpers\AdHocSqlRunner.cs" />
     <Compile Include="Helpers\Filters.cs" />
     <Compile Include="Helpers\NullJournal.cs" />
-    <Compile Include="Helpers\StringExtensions.cs" />
     <Compile Include="Helpers\TemporarySqlDatabase.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="ScriptProviders\EmbeddedScriptAndCodeProvider.cs" />
@@ -97,8 +94,6 @@
     <Compile Include="Support\ObjectNameOptions.cs" />
     <Compile Include="Support\SQLite\SQLiteObjectParser.cs" />
     <Compile Include="Support\SQLite\SqliteTableJournal.cs" />
-    <Compile Include="Support\SqlServer\SqlObjectParser.cs" />
-    <Compile Include="Support\SqlServer\SqlTableJournal.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath32)\Microsoft\Portable\$(TargetFrameworkVersion)\Microsoft.Portable.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
