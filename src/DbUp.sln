@@ -39,6 +39,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DbUp.SQLite.Mono", "DbUp.SQ
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DbUpXamarin", "DbUp\DbUpXamarin.csproj", "{E1E5EACF-3E76-45A0-A008-7A46C6C261A0}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DbUpXamarin.SQLite.Mono", "DbUp.SQLite.Mono\DbUpXamarin.SQLite.Mono.csproj", "{2DCE6C5A-BFC6-4E1A-BA82-4EA5BB0DC80A}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		AppStore|Any CPU = AppStore|Any CPU
@@ -203,6 +205,18 @@ Global
 		{E1E5EACF-3E76-45A0-A008-7A46C6C261A0}.Release|Any CPU.Build.0 = Release|Any CPU
 		{E1E5EACF-3E76-45A0-A008-7A46C6C261A0}.Release|Mixed Platforms.ActiveCfg = Release|Any CPU
 		{E1E5EACF-3E76-45A0-A008-7A46C6C261A0}.Release|Mixed Platforms.Build.0 = Release|Any CPU
+		{2DCE6C5A-BFC6-4E1A-BA82-4EA5BB0DC80A}.AppStore|Any CPU.ActiveCfg = AppStore|Any CPU
+		{2DCE6C5A-BFC6-4E1A-BA82-4EA5BB0DC80A}.AppStore|Any CPU.Build.0 = AppStore|Any CPU
+		{2DCE6C5A-BFC6-4E1A-BA82-4EA5BB0DC80A}.AppStore|Mixed Platforms.ActiveCfg = AppStore|Any CPU
+		{2DCE6C5A-BFC6-4E1A-BA82-4EA5BB0DC80A}.AppStore|Mixed Platforms.Build.0 = AppStore|Any CPU
+		{2DCE6C5A-BFC6-4E1A-BA82-4EA5BB0DC80A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2DCE6C5A-BFC6-4E1A-BA82-4EA5BB0DC80A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2DCE6C5A-BFC6-4E1A-BA82-4EA5BB0DC80A}.Debug|Mixed Platforms.ActiveCfg = Debug|Any CPU
+		{2DCE6C5A-BFC6-4E1A-BA82-4EA5BB0DC80A}.Debug|Mixed Platforms.Build.0 = Debug|Any CPU
+		{2DCE6C5A-BFC6-4E1A-BA82-4EA5BB0DC80A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2DCE6C5A-BFC6-4E1A-BA82-4EA5BB0DC80A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2DCE6C5A-BFC6-4E1A-BA82-4EA5BB0DC80A}.Release|Mixed Platforms.ActiveCfg = Release|Any CPU
+		{2DCE6C5A-BFC6-4E1A-BA82-4EA5BB0DC80A}.Release|Mixed Platforms.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
