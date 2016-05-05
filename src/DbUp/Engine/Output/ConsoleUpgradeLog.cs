@@ -14,7 +14,10 @@ namespace DbUp.Engine.Output
         /// <param name="args">The args.</param>
         public void WriteInformation(string format, params object[] args)
         {
+#if NETPCL
+#else
             Write(ConsoleColor.White, format, args);
+#endif
         }
 
         /// <summary>
@@ -24,7 +27,10 @@ namespace DbUp.Engine.Output
         /// <param name="args">The args.</param>
         public void WriteError(string format, params object[] args)
         {
+#if NETPCL
+#else
             Write(ConsoleColor.Red, format, args);
+#endif
         }
 
         /// <summary>
@@ -34,14 +40,19 @@ namespace DbUp.Engine.Output
         /// <param name="args">The args.</param>
         public void WriteWarning(string format, params object[] args)
         {
+#if NETPCL
+#else
             Write(ConsoleColor.Yellow, format, args);
+#endif
         }
 
+#if !NETPCL
         private static void Write(ConsoleColor color, string format, object[] args)
         {
             Console.ForegroundColor = color;
             Console.WriteLine(format, args);
             Console.ResetColor();
         }
+#endif
     }
 }
