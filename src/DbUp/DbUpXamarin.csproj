@@ -29,6 +29,10 @@
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
     <ConsolePause>false</ConsolePause>
+    <DefineConstants>__UNIFIED__;__MOBILE__;__IOS__;MONO</DefineConstants>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'AppStore|AnyCPU'">
+    <DefineConstants>__UNIFIED__;__MOBILE__;__IOS__;MONO</DefineConstants>
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="Mono.Data.Sqlite" />
