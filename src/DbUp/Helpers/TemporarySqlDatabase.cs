@@ -90,23 +90,17 @@ namespace DbUp.Helpers
         {
             public void WriteInformation(string format, params object[] args)
             {
-#if !NETPCL
                 Trace.TraceInformation(format, args);
-#endif
             }
 
             public void WriteError(string format, params object[] args)
             {
-#if !NETPCL
                 Trace.TraceError(format, args);
-#endif
             }
 
             public void WriteWarning(string format, params object[] args)
             {
-#if !NETPCL
                 Trace.TraceWarning(format, args);
-#endif
             }
 
             public IDisposable Indent()

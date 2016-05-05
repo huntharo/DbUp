@@ -14,9 +14,7 @@ namespace DbUp.Engine.Output
         /// <param name="args">The args.</param>
         public void WriteInformation(string format, params object[] args)
         {
-#if !NETPCL
             Trace.WriteLine("INFO:  " + string.Format(format, args));
-#endif
         }
 
         /// <summary>
@@ -26,9 +24,7 @@ namespace DbUp.Engine.Output
         /// <param name="args">The args.</param>
         public void WriteError(string format, params object[] args)
         {
-#if !NETPCL
             Trace.WriteLine("ERROR: " + string.Format(format, args));
-#endif
         }
 
         /// <summary>
@@ -38,9 +34,7 @@ namespace DbUp.Engine.Output
         /// <param name="args">The args.</param>
         public void WriteWarning(string format, params object[] args)
         {
-#if !NETPCL
             Trace.WriteLine("WARN:  " + string.Format(format, args));
-#endif
         }
     }
 }
